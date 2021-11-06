@@ -4,12 +4,14 @@ import Header from '../components/home/Header';
 import Stories from '../components/home/Stories';
 import Post from '../components/home/Post';
 import {POST} from '../data/posts';
+
 const HomeScreen = () => {
   return (
     <SafeAreaView style={styles.container}>
       <Header />
-      <Stories />
+
       <ScrollView>
+      <Stories />
         {POST.map((post, index) => (
           <Post post={post} key={index} />
         ))}
@@ -18,6 +20,11 @@ const HomeScreen = () => {
   );
 };
 
+
+    
+  
+
+
 const styles = StyleSheet.create({
   container: {
     backgroundColor: 'black',
@@ -25,4 +32,6 @@ const styles = StyleSheet.create({
   },
 });
 
+
 export default HomeScreen;
+
