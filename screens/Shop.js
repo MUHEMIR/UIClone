@@ -1,12 +1,28 @@
-import React from 'react'
-import { View, Text } from 'react-native'
+import React from 'react';
+import { View, Text, StyleSheet,SafeAreaView, ScrollView} from 'react-native';
+import ShopHeader from '../components/shop/ShopHeader';
+import SearchTab from '../components/shop/SearchTab';
+import ShopPost from '../components/shop/ShopPost';
 
 const Shop = () => {
     return (
-        <View>
-            <Text>Shop</Text>
-        </View>
+        <SafeAreaView style={styles.container}> 
+        <ShopHeader />
+        <SearchTab />
+        <ScrollView>
+        <ShopPost />
+        </ScrollView>
+        </SafeAreaView>
     )
 }
 
-export default Shop
+const styles = StyleSheet.create({
+
+    container:{
+        backgroundColor: 'black',
+    flex: 1,
+    }
+
+})
+
+export default Shop;
