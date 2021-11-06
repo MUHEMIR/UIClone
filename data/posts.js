@@ -35,4 +35,28 @@ export const POST = [
       },
     ],
   },
+
+  {
+    imageurl:
+      'https://cdn.discordapp.com/attachments/689501353311207436/906395114463694918/FB_IMG_1608201364685.jpg',
+    user: USERS[6].user,
+    likes: 999,
+    caption: 'Cranborne Barracks',
+    profile_picture: USERS[6].image,
+    comments: [
+      {
+        user: 'pekzjr',
+        comment: 'Rhodesians Never Die!',
+      },
+
+      {
+        user: 'pog',
+        comment: 'Courageous People, Splendid Land....',
+      },
+
+
+    ],
+  },
+
+
 ];

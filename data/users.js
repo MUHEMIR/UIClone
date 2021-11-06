@@ -34,4 +34,12 @@ export const USERS = [
     image:
       'https://cdn.discordapp.com/attachments/689501353311207436/905506207626850365/FB_IMG_1610643828634.jpg',
   },
+
+  {
+    user: 'dailyRhodiesPost4yourSoul',
+    image:
+      'https://cdn.discordapp.com/attachments/689501353311207436/906481256357838858/rsf.jpg',
+  },
+
+
 ];
