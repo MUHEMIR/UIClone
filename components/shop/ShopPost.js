@@ -1,36 +1,22 @@
-import React from 'react'
-import { StyleSheet, Text, View, Image } from 'react-native'
-
+import React from 'react';
+import { StyleSheet, Text, View, Image, FlatList, TouchableOpacity } from 'react-native';
+import {SHOP} from '../../data/shop';
 const ShopPost = () => {
     return (
-        <View>
-            
-            <View style={styles.container}>
-            <Image source={require('../../assets/aurelian.jpg') } style={styles.images} />
-            <Image source={require('../../assets/rli-tshirt.jpg') } style={styles.images} />
-            </View>
-
-            <View style={styles.container}>
-            <Image source={require('../../assets/gawrgurajacket.jpg') } style={styles.images} />
-            <Image source={require('../../assets/georgevi.jpg') } style={styles.images} />
-            </View>
-
-             <View style={styles.container}>
-            <Image source={require('../../assets/RAFbushjacket.jpg') } style={styles.images} />
-            <Image source={require('../../assets/webley.jpg') } style={styles.images} />
-            </View>
-
-            <View style={styles.container}>
-            <Image source={require('../../assets/nendo.jpg') } style={styles.images} />
-            <Image source={require('../../assets/edwardviii.jpg') } style={styles.images} />
-            </View>
-
-            
+        <View style={styles.container}>
+             <FlatList
+                numColumns={2}
+                data={SHOP}
+                renderItem={({ item }) => (
+                    <TouchableOpacity>
+                <Image source={{uri: item.image}} style={styles.images} />
+                </TouchableOpacity>
+                )} />
         </View>
     )
 }
 
-export default ShopPost
+export default ShopPost;
 
 const styles = StyleSheet.create({
 
@@ -44,6 +30,7 @@ const styles = StyleSheet.create({
         width: 200,
         height: 200,
         marginLeft: 3,
+        marginTop: 3,
 
     },
 })

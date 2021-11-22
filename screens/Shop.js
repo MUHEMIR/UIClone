@@ -9,9 +9,7 @@ const Shop = () => {
         <SafeAreaView style={styles.container}> 
         <ShopHeader />
         <SearchTab />
-        <ScrollView>
         <ShopPost />
-        </ScrollView>
         </SafeAreaView>
     )
 }

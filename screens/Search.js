@@ -7,9 +7,7 @@ const Search = () => {
     return (
         <SafeAreaView style={styles.container}>
         <Header />
-        <ScrollView>
         <SearchPost />
-        </ScrollView>
         </SafeAreaView>
     )
 }
